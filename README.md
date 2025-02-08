@@ -11,7 +11,7 @@
    <br />
    <strong>Version: </strong>15.3
    <br />
-   <a href="https://github.com/valnoxy/t480-oc/releases"><strong>Download now »</strong></a>
+   <a href="https://github.com/minaWesam/T480s-OC/releases/tag/Release"><strong>Download now »</strong></a>
   
 </br>
 
@@ -22,7 +22,12 @@ This guide is only for the Lenovo ThinkPad T480. I am NOT responsible for any ha
 
 ## 💻 Tested devices
 T480s some other thinkpads with a simliar configurtion may work
-&nbsp;
+<details>
+<summary><strong>💻 My Hardware</strong></summary>
+<br>
+These are the Hardware component I use. But this OpenCore configuation <strong>should still work</strong> with your device, even if the components are not equal.
+
+Check the model of your WiFi & Bluetooth card. Intel cards should be compatible with itlwm (or AirportItlwm). If your card is from another manufacturer, please check if your card supports macOS. macOS Sonoma no longer supports Broadcom Wifi cards.
 
 | Category  | Component                            |
 | --------- | ------------------------------------ |
@@ -32,3 +37,64 @@ T480s some other thinkpads with a simliar configurtion may work
 | Memory    | 16GB DDR4 2400Mhz                    |
 | Camera    | 720p Camera                          |
 | WiFi & BT |Intel Dual Band Wireless-AC 8265      |
+
+</details>  
+
+</details>
+
+&nbsp;
+
+## Status
+
+<details>  
+<summary><strong>✅ What's working</strong></summary>
+</br>
+ 
+- [X] Intel WiFi & Bluetooth (thanks to [itlwn](https://github.com/OpenIntelWireless/itlwm))
+- [X] Brightness / Volume Control
+- [X] Battery Information
+- [X] Audio (Audio Jack & Speaker)
+- [X] USB Ports & Built-in Camera
+- [X] Graphics Acceleration
+- [X] Trackpoint / Touchpad
+- [X] Power management / Sleep
+- [X] FaceTime / iMessage (iServices)
+- [X] HDMI
+- [X] Automatic OS updates
+- [X] Handoff / Universal Clipboard
+- [X] Sidecar (Cable) / AirPlay to Mac
+- [X] SIP / FireVault 2
+- [X] USB-C
+- [X] Thunderbolt
+ </details>
+
+<details>  
+<summary><strong>⚠️ What's not working</strong></summary>
+</br>
+
+- [ ] Safari DRM 
+  - Use Chromium powered Browser or Firefox to watch Amazon Prime Video, Netflix, Disney+ and others.
+- [ ] AirDrop & Continuity 
+  - Only devices with Intel WiFi affected
+- [ ] Fingerprint Reader 
+  - Disabled with NoTouchID kext
+- [ ] Sidecar Wireless
+- [ ] Apple Watch Unlock
+- [ ] Dualbooting Windows / Linux (with OpenCore) 
+  - Theoretically this works, but the ACPI patches can make the operating system unstable.
+
+</details>
+
+<details>  
+<summary><strong>🔄 Not tested</strong></summary>
+</br>
+
+- [ ] WWAN
+
+</details>
+
+&nbsp;
+
+## ⭐️ Feedback
+Did you find any bugs or just have some questions? Feel free to provide your feedback using the Discussions tab.
+
